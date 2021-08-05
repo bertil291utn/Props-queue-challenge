@@ -1,6 +1,63 @@
 const {Queue} = require('./Queue');
 
 const q1 = new Queue();
+
+
+//appendix test
+/*
+  ADD,1
+ADD,2
+ADD,3
+ADD,4
+ADD,5
+ADD,6
+REMOVE_USER,2
+REMOVE_USER,6
+REMOVE_USER,10
+MOVE,3,1
+REVERSE
+SWAP,6,1
+REMOVE_POSITION,3
+REMOVE_USER,1
+REMOVE_POSITION,6
+ADD,7
+ADD,8
+PRINT
+*/
+q1.add(1);
+q1.add(2);
+q1.add(3);
+q1.add(4);
+q1.add(5);
+q1.add(6);
+q1.removeByUserID(2);
+q1.removeByUserID(6);
+q1.removeByUserID(10);
+q1.move(3,1);
+q1.reverse();
+q1.swap(6,1);
+q1.removeByPos(3);
+q1.removeByUserID(1);
+q1.removeByPos(6);
+q1.add(7);
+q1.add(8);
+console.log(q1.print())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+TEST
 console.log(q1.add(105));
 //=>0
 console.log(q1.add(106));
@@ -56,3 +113,4 @@ console.log(q1.reverse());
 console.log(q1)
 //=> [114,110,107,106]
 console.log(q1.print());
+*/
