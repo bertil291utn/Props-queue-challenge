@@ -1,5 +1,7 @@
 ## Queue from scratch
 
+FIFO, first input first output. With `Array.prototype` push and shift methods  on top JavaScript
+
 - Array
 - Node.js
 
