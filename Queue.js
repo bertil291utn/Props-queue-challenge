@@ -28,6 +28,10 @@ class Queue {
   reverse() {
     return this.queue.reverse();
   }
+  
+  print() {
+    return this.queue.print();
+  }
 
 
 }

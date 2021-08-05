@@ -7,17 +7,15 @@ class LinkedList {
     return this.list.push(data) - 1;
   }
 
-  // get(index) {
-  //   this.list[index];
-  // }
-
-  // add_at(index, item) {
-  //   this.list.splice(index, 0, item);
-  // }
+  dequeue() {
+    if (this.list.length == 0) return false;
+    this.list.shift();
+    return true;
+  }
 
   removeByPos(position) {
-    const response=this.list.splice(position - 1, 1);
-    if(response.length==0) return false;
+    const response = this.list.splice(position - 1, 1);
+    if (response.length == 0) return false;
     return true;
   }
 
@@ -36,18 +34,27 @@ class LinkedList {
     return true;
   }
 
-  swap(pos1,pos2){
+  swap(pos1, pos2) {
     const temp = this.list[pos1];
-    if(!temp||!this.list[pos2]) return false;
+    if (!temp || !this.list[pos2]) return false;
     this.list[pos1] = this.list[pos2];
     this.list[pos2] = temp;
     return true;
   }
 
-  reverse(){
-    if(this.list.length==0) return false;
+  reverse() {
+    if (this.list.length == 0) return false;
     this.list.reverse();
     return true;
+  }
+
+  print() {
+    if(this.list.length == 0) return false;
+    let response = '';
+    this.list.forEach((element, index) => {
+      response += `{${index }} : {${element}}\n`;
+    });
+    return response;
   }
 }
 

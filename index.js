@@ -55,3 +55,4 @@ console.log(q1.reverse());
 //=>true
 console.log(q1)
 //=> [114,110,107,106]
+console.log(q1.print());
