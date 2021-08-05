@@ -16,7 +16,8 @@ class LinkedList {
   // }
 
   removeByPos(position) {
-    this.list.splice(position - 1, 1);
+    const response=this.list.splice(position - 1, 1);
+    if(response.length==0) return false;
     return true;
   }
 

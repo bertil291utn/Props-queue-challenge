@@ -13,6 +13,14 @@ class Queue {
     return this.queue.removeByPos(position);
   }
 
+  removeByUserID(userID) {
+    return this.queue.removeByUserID(userID);
+  }
+
+  move(from,to) {
+    return this.queue.move(from,to);
+  }
+
 
 }
 
