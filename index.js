@@ -39,3 +39,19 @@ console.log(q1.move(10,2));
 //=>false
 console.log(q1)
 //=> [110, 107,106]
+console.log(q1.swap(0,2));
+//=>true
+console.log(q1)
+//=> [106, 107,110]
+console.log(q1.swap(10,2));
+//=>false
+console.log(q1)
+//=> [106, 107,110]
+console.log(q1.add(114));
+//=>3
+console.log(q1)
+//=> [106, 107,110,114]
+console.log(q1.reverse());
+//=>true
+console.log(q1)
+//=> [114,110,107,106]

@@ -35,6 +35,20 @@ class LinkedList {
     this.list.splice(toIndex, 0, element);
     return true;
   }
+
+  swap(pos1,pos2){
+    const temp = this.list[pos1];
+    if(!temp||!this.list[pos2]) return false;
+    this.list[pos1] = this.list[pos2];
+    this.list[pos2] = temp;
+    return true;
+  }
+
+  reverse(){
+    if(this.list.length==0) return false;
+    this.list.reverse();
+    return true;
+  }
 }
 
 module.exports = {

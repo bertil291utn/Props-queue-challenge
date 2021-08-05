@@ -21,6 +21,14 @@ class Queue {
     return this.queue.move(from,to);
   }
 
+  swap(pos1,pos2) {
+    return this.queue.swap(pos1,pos2);
+  }
+
+  reverse() {
+    return this.queue.reverse();
+  }
+
 
 }
 
